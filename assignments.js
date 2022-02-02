@@ -261,3 +261,15 @@ if (populations.length === 4){
 const percentages = [percentageOfWorld1(330), percentageOfWorld1(9), percentageOfWorld1(1561), percentageOfWorld1(65)]
 console.log(percentages)
 */
+
+// LECTURE: Introduction to Objects
+// 1. Createanobjectcalled'myCountry'foracountryofyourchoice,containing properties 'country', 'capital', 'language', 'population' and 'neighbours' (an array like we used in previous assignments)
+
+const myCountry = {
+  country: 'U.S.A.',
+  capital: 'Washington D.C.',
+  language: 'English',
+  population: 330,
+  neighbors: ['Canada','Mexico','UK']
+}
+console.log(myCountry);

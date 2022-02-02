@@ -204,6 +204,7 @@ if (friends.indluces('Steven')){
   console.log('You have a friends called steven');
 };
 */
+/*
 //Array - used for more ordered data
 const mikeArray = [
   'Mike',
@@ -221,3 +222,4 @@ const mike = {
   job: 'developer',
   friends: ['Jonas', 'Peter', 'Steven']
 };
+*/
