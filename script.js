@@ -204,4 +204,20 @@ if (friends.indluces('Steven')){
   console.log('You have a friends called steven');
 };
 */
+//Array - used for more ordered data
+const mikeArray = [
+  'Mike',
+  'Allen',
+  2037 - 1986,
+  'developer',
+  ['Jonas', 'Peter', 'Steven']
+];
 
+//Object - multiple ways to do it but the literal syntax below is the most common way to create an object. Used for less structured data where you'll want to pull key value pairs from the data. 
+const mike = {
+  firstName: 'Mike',
+  lastName: 'Allen',
+  age: 2037 - 1986,
+  job: 'developer',
+  friends: ['Jonas', 'Peter', 'Steven']
+};
