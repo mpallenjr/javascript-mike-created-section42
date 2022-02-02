@@ -1,0 +1,215 @@
+//////////
+
+Section 12 -Data Types
+
+Two types of variables, objects and primitive.  
+
+IE (Object) let me = {name: 'Mike'};
+IE (Primative, everything else) let firstName = 'Mike'; let age = 30;
+
+7 Primative types
+Number; String; Boolean; Undefined; Null;  Symbol; BigInt;
+
+------------------------------------------
+Number - Floating point numers (used for decimals and integers) IE let age = 23;
+
+String - Sequence of characters (used for text) IE let fitstName = 'Mike';
+
+Boolean - Logical type that can only be true or false (used for taking decisions) IE let fullAge = true;
+------------------------------------------
+
+Undefined - Value taken by a variable that is not yet defined ('empty Value') IE let children;
+
+Null: Also means 'empty value'
+
+Symbol(ES2015): Value that is unique and vannot be changed
+
+BigInt(ES2020): Larger integers than the Number type can hold
+
+* Data Types are determined automatically in JavaScript *
+
+(section about commenting code)
+
+/* .. */
+
+let is used to declare a variable, do not use let to ressaign a variable (dynamic typing)
+
+
+
+//////////
+
+Section 13 - let, const, and var
+
+Reassigning a variable is also know as 'mutating' the value.  You may here mutate when changing the value of a variable. 
+
+You typically want to use let when you intend to mutate the value or if we want to declare an empty variable. 
+
+const creates a variable that cannont be reassigned later.  These are also called immutable.
+
+You should be using const by default and only using let if you're absolutely sure that the variable will be mutated at some point. It's best practice to have the fewest changing variable possible.  So best practice is to use const as much as possible. 
+
+var is another way of declaring variables, but should be completely ignored.  It's legacy code, an old way to declare variables pre ES6.  
+
+var and let appear the same but underneath they are very different. 
+
+It is not manditory to declare variables, BUT ALWAYS DO IT ANYWAY!!!
+
+//////////
+
+Section 14 - Basic Operators 
+
+Operators can be used to do math or in some cases affect strings.  
+
+typeof operator is another operator that tells the type of 'X' See consolog details in the past exercise.
+
+you use comparison operators to return boolean values. these results are typically stored in variables.
+
+There are an order of operations to be talked about im assuming next. 
+
+
+
+
+//////////
+
+Section 15 - Operator PRecedence
+
+Basically order of operations, what will get executed first,second, etc. 
+
+*MDN Reference for operator order*
+-Right to Left vs Left to Right operators
+
+
+
+//////////
+
+Section 17 - Strings and Template Literals
+
+Javascript can convert intergers to strings when concantenating.  
+
+Using backtticks allows for template literals(interpolation). 
+
+//////////
+
+Section 18 - Taking Decisions: if / else Statements
+
+If statement are created like such:
+
+if (condition) {
+  the code you want ran if the condition is met
+} else {
+  the code you want ran i the condition is not met
+}
+// this is also considered an "if else control structure".
+an else statement is not reuired. 
+
+//////////
+
+Section 20 - Type Conversion and Coercion
+
+Type conversion is manually changing the type from one type to another. (explicite)
+Coercion is when JavaScript does this automatically for you.  (automatic)
+
+console.log(Number('2')); - converts a string to an integer
+
+console.log(String(2)); - converts a number to a string. 
+
+in type coercion the + operator is used to automatically convert an integer to a string, the - operator is used to automatically convert a string to an integer. 
+
+
+
+\\\\\\\\\\
+
+Section 21 - Truthy and Falsy values
+
+5 falsy values :
+0, '', undefined, null, NaN
+
+Everything else is true
+
+so when using a boolean function, that is how the result is determinesd. 
+
+\\\\\\\\\\
+
+Section 22 - Equality Operators: == vs. ===
+
+The tripple equals is a strict  equality operator, the double is a loose equality oerator.  The triple will only give true if the input and input type are the same as the comparison.  The double equal will also incorperate type coercion, which will try to convert a values type in an effort to compare the two.  
+
+You should always be using the tripple equality operator.  Even in a case where you want type coercion, it is better to mannualy convert they type, than to use a double equal opeerator. 
+
+\\\\\\\\\\
+
+Section 23 - Boolean Logic
+
+Uses true and false values to solve problems.
+
+and, or, and not operators...
+
+only if a AND b are true will the AND operator be true
+
+if a OR b are true then the OR operator becomes true
+
+not operator inverts a boolean value. the ! is inserted at the beginning of the variable. 
+
+\\\\\\\\\\
+
+Section 24 - Logical Operators
+
+Practical.  
+
+\\\\\\\\\\
+
+Section 25 - Switch Statement
+
+\\\\\\\\\\
+
+Section 26 - Statements and Expressions
+
+expressions produce valuse (ie 3+4)  if it produces a value in Javascript, it is an 'expression'
+
+statements are larger pieces of code that do not produce values on their own. 
+
+IE  in english a declaration is the statmeent, the be expressions are the actual words being used. 
+
+an if else statement might create a comparison but it does not produce a value, just encourages the action that is going to be performend. 
+\\\\\\\\\\
+
+Section 28 - The Conditional (Ternary) Operator 
+
+\\\\\\\\\\\
+
+Section 30 - JavaScript Releases ES5, ES6+ and ESNext
+
+1995 - first version of JavaScript is created in 10 days (Mocha)
+
+1996 - Mocha becomes LiveScript becomes JavaScript to attract Java developers.  Has no relation to Java at all
+        -JScript , a microsoft competing language is introduces 
+
+1997 - first official standard for JavaScript 
+        ECMAScript (the standards to the language)
+        JavaScript (the language itself)
+
+2009 ES5 lots of new features
+
+2015 ES6/ES2015 biggest update languate ever 
+
+So starts the annual release cycle with ES2016 .....
+
+JavaScript has backwards compatibility all the way back to version 1. 
+  In updates of the languages, things are only added, not taken out, ultimately not "breaking the web".
+
+Modern JavaScript is a lot cleaner and less quirky/buggy than JavaScript 20 years ago
+
+ESNext - basically future features being implemented are subjected to a 4 stage process.  Early implementation after stage 2 completion but before stage 4 approbal a browaer will implement a feature because they're pretty confident EMCA will implement it.  
+
+
+
+\\\\\\\\\\\\
+
+Section 32 - Strict Modern
+
+to activate type 'use strict'; as the first line of code.
+by doing this it will allow you to create more 'secure' code by reducing errors and avoiding bugs.  Strict mode prevents you from doing certian things that cause errors as wells as giving you errors in your console.log when JavaScript would fail silently otherwise.
+
+
+\\\\\\\\\\
+
